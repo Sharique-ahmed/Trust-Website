@@ -1,0 +1,450 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Merienda', cursive;
+}
+header{
+    background:lavenderblush;
+    font-family: 'MuseoModerno', cursive;
+}
+.navbar{
+    min-height: 75px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-brand{
+    font-size: 1.9rem;
+    padding: 4px 20px;
+    color: black;
+}
+.nav-menu{
+    display: flex;
+    gap: 30px;
+    position: absolute;
+    right: 39px;
+
+}
+.nav-item{
+    font-size: 1.3rem;
+    list-style: none;
+}
+.ha{
+    text-decoration: none;
+    color:black;
+}
+.ha:hover{
+    font-size:1.8rem;
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color:black;
+}
+@media(max-width:800px){
+    .hamburger{
+        display: block;
+        margin: 0 9px;
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .nav-menu{
+        position: absolute;
+        left: -120%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color:transparent;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+    }
+    .nav-item{
+        margin: 15px 0;
+    }
+    .nav-menu.active{
+        left: 0;
+    }
+}
+.container{
+    width: 100%;
+    justify-content: center;
+}
+
+
+
+
+/** First Container**/
+.Container1{
+    background: linear-gradient(rgba(0, 0, 0, 0.471),rgba(0, 0, 0, 0.471)),url(Images/Back.jpg) center;
+    background-size: cover;
+    height: 670px;
+    display: grid;
+}
+.scl{
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 40px auto;
+   
+}
+.scl_name{
+    color:lavender;
+}
+.scl_details{
+    font-size: 1.5rem;
+    color:lavender;
+    margin: 12px auto;
+    width: 700px;
+    height: 100px;
+    background:rgba(0, 128, 128, 0.387);
+    border-radius: 20px;
+}
+
+
+
+
+/**Second Container**/
+.Container2{
+    background:rgba(0, 128, 128, 0.288);
+    width: 98.7vw;
+    height: 450px;
+}
+.head2{
+    font-size: 1.9rem;
+    padding-top: 40px;
+    text-align: center;
+}
+.Onetimebtn{
+    background: #E2D1F9;
+    background-image: -webkit-linear-gradient(top, #E2D1F9, #E2D1F9);
+    background-image: -moz-linear-gradient(top, #E2D1F9, #E2D1F9);
+    background-image: -ms-linear-gradient(top, #E2D1F9, #E2D1F9);
+    background-image: -o-linear-gradient(top, #E2D1F9, #E2D1F9);
+    background-image: linear-gradient(to bottom, #E2D1F9, #E2D1F9);
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-family: Georgia;
+    color: #000000;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    width: 250px;
+    border: 1px solid black;
+}
+  
+.Onetimebtn:hover {
+    background: #8A307F;
+    text-decoration: none;
+}
+.Donate{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap:30px;
+    margin-top: 20px;
+}
+.Pledge{
+    margin-top: 9px;
+    font-size: 1.3rem;
+}
+.rs{
+    margin-top: 20px;
+    text-align: center;
+}
+.msg{
+    font-size: 1.3rem;
+    margin-top: 9px;
+}
+.rupees{
+    display: flex;
+    justify-content: center;
+    gap: 36px;
+    margin-top: 17px;
+}
+.rupees1{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 17px;
+}
+.rslist{
+    list-style: none;
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    background: transparent;
+    border-radius: 50%;
+}
+.rslist:hover{
+    background:#AA96DA;
+}
+.underline{
+    position: relative;
+    top: 10px;
+    width: 70%;
+    margin: 0 auto;
+    background: black;
+}
+
+.rsbtn{
+    position: relative;
+    top: 37px;
+    color: black;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.inputfield{
+    width: 200px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+
+}
+.arowbg{
+    list-style: none;
+    width: 40px;
+    height: 25px;
+    background: white;
+    border-radius: 50%;
+    margin-top: 6px;
+}
+.arowbg:hover{
+    background: teal;
+}
+
+
+/**Container 3**/
+.Container3{
+    width: 98.7vw;
+    background: linear-gradient(rgba(0, 0, 0, 0.484),rgba(0, 0, 0, 0.471)),url(Images/scl_girl.jpg) center;
+    background-size: cover;
+    text-align: center;
+    align-items: center;
+    height: 560px;
+}
+.about{
+    position:absolute;
+    left: 10px;
+    padding-top: 100px;
+}
+.abt{
+    font-size: 1.9rem;
+    padding-top: 20px;
+    color: lavenderblush;
+}
+.abt_us{
+    font-size: 1.1rem;
+    color:lavender;
+    margin: 12px 30px;
+    width: 500px;
+    height: 170px;
+    border-radius: 20px;
+}
+.btn{
+    width: 160px;
+    height: 50px;
+    font-size: 1.4rem;
+    border-radius: 29px;
+    margin:70px auto 0 ;
+    background: teal;
+}
+.btn:hover{
+    width:200px;
+    background-color:#AA96DA;
+    padding-top: 9px;
+}
+.reg{
+    text-decoration: none;
+    color: black;
+    position: relative;
+    top: 6px;
+}
+
+/** Container 4 **/
+.Container4{
+    width: 98.7vw;
+    background: gainsboro;
+    overflow: hidden;
+}
+.content2{
+    font-size: 1.2rem;
+    position: relative;
+    bottom: 30px;
+}
+.boxcontainer{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.box{
+    position: relative;
+    width: 260px;
+    height:290px;
+    padding: 40px;
+    background:rgba(0, 128, 128, 0.288);
+    border-radius: 6px;
+    margin:55px auto;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-align: center;
+    
+}
+
+.box:hover{
+
+    box-shadow: 1px 4px 9px black;
+}
+.Icon1{
+    position: relative;
+    bottom: 28px;
+    width:110px;
+    height:110px;
+    color:#fff;
+    background:url(Images/members.png) center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border-radius:50%;
+    font-size: 30px;
+    font-weight: 500;
+    transition: 0.6s;
+}
+.Icon2{
+    position: relative;
+    bottom: 28px;
+    width:110px;
+    height:110px;
+    color:#fff;
+    background:url(Images/child.png) center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border-radius:50%;
+    font-size: 30px;
+    font-weight: 500;
+    transition: 0.6s;
+}
+.Icon3{
+    position: relative;
+    bottom: 28px;
+    width:110px;
+    height:110px;
+    color:#fff;
+    background:url(Images/scholarship.png) center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border-radius:50%;
+    font-size: 30px;
+    font-weight: 500;
+    transition: 0.6s;
+}
+.Icon4{
+    position: relative;
+    bottom: 28px;
+    width: 110px;
+    height:110px;
+    color:#fff;
+    background:url(Images/schools.png) center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border-radius:50%;
+    font-size: 30px;
+    font-weight: 500;
+    transition: 0.6s;
+}
+.content{
+    font-size: 1.1rem;
+    margin: 10px;
+    position: relative;
+    z-index: 1;
+    transition: 0.8s;
+}
+
+/**Container 5**/
+.Container5{
+    width: 98.7vw;
+    background: linear-gradient(rgba(0, 0, 0, 0.484),rgba(0, 0, 0, 0.471)),url(Images/boy.jpg) center;
+    background-size: cover;
+    text-align: center;
+    height: 500px;
+    color: wheat;
+}
+.chairman{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+}
+.cimg{
+    width: 300px;
+    height: 400px;
+    padding-left: 70px;
+    border-radius: 20px;
+}
+
+.words{
+    font-size: 1.1rem;
+    color:lavender;
+    margin: 12px auto;
+    width: 700px;
+    height: 350px;
+    background:rgba(0, 128, 128, 0.387);
+    border-radius: 20px;
+    padding-top: 8px;
+}
+
+
+/**Footer**/
+.footer{
+    width: 98.7vw;
+    background:black;
+    text-align: center;
+}
+.details{
+    display: flex;
+    gap:29px;
+    justify-content: center;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    color: white;
+}
+
+.links{
+    color:white;
+    font-size: 1.2rem;
+    margin: 20px 10px 0;
+}
+.cp{
+    padding-top: 10px;
+}
